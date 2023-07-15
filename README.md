@@ -22,3 +22,6 @@ You may also see any lint errors in the console.
 
 # Install spotify-web-api-js using command:
 ### npm install spotify-web-api-js
+
+# Install Material-ui for icon in reacts using command:
+### npm install @mui/icons-material @mui/material @emotion/styled @emotion/react

@@ -18,7 +18,7 @@ function App() {
         const _token = hash.access_token;
         window.location.hash= "";
 
-        console.log("Token : ", _token);
+        // console.log("Token : ", _token);
         if (_token) {
             dispatch({
                 type: "SET_TOKEN",
@@ -37,7 +37,7 @@ function App() {
             });
         }
 
-        console.log("Token: ", _token);
+        // console.log("Token: ", token);
     },  []);
 
     // console.log('🙍‍♂️', user);
