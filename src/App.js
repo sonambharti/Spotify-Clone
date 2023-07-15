@@ -10,14 +10,14 @@ function App() {
     useEffect(() => {
         const hash = getTokenFromUrl();
         const _token = hash.access_token;
-        window.location.hash= "";
+        // window.location.hash= "";
 
         if (_token) {
             setToken(_token);
         }
 
 
-        console.log("Token : ", token);
+        console.log("Token : ", _token);
     },  []);
 
 
