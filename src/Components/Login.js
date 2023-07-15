@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css';
+import '../ComponentCss/Login.css';
 import { loginUrl } from "./spotify";
 
 function Login() {

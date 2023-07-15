@@ -14,8 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Create an account on Spotify-developer -> dashboard -> create project
-1.) Client Id: c79e7d54d5a74d88853817ee59bdd249 in the developer mode
+# Create an account on Spotify-developer -> dashboard -> create project
+## 1.) Client Id: c79e7d54d5a74d88853817ee59bdd249 in the developer mode
 2.)
 
-Create an account on firebase.google.com -> conosole -> create project
+# Create an account on firebase.google.com -> conosole -> create project
+
+# Install spotify-web-api-js using command:
+### npm install spotify-web-api-js
