@@ -5,7 +5,7 @@
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: width 230px;
+    min-width: 230px;
     height: 100vh;
     background-color: #040404;
 }
@@ -15,4 +15,10 @@
     margin-right: auto;
     height: 70px;
     padding: 10px;
+}
+
+.sidebar_title{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
 }
