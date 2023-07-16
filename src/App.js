@@ -1,5 +1,4 @@
-import React,  { useEffect, useState } from "react";
-import './App.css';
+import React,  { useEffect } from "react";
 import Login from "./Components/Login";
 import { getTokenFromUrl } from './Components/spotify';
 import Player from "./Components/Player";
@@ -42,6 +41,12 @@ function App() {
                     playlists: playlists,
                 });  
             });
+
+            spotify.getPlaylist('37i9dQZEVXcQ9COmYvdajy').then(response => dispatch({
+                type: "SET_DISCOVER_WEEKLY",
+                discover_weekly: response,
+            })
+            );
         }
 
         // console.log("Token: ", token);

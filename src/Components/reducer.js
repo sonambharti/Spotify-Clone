@@ -26,7 +26,12 @@ const reducer = (state, action) => {
                 ...state,
                 playlists: action.playlists,
             };
-            default:
+        case 'SET_DISCOVER_WEEKLY':
+            return {
+                ...state,
+                user: action.user,
+            };
+        default:
                 return state;
     }
 }
