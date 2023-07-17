@@ -7,6 +7,12 @@
     transition: 200ms color ease-in;
 }
 
+.sidebarOption > p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
 .sidebar > hr{
     border: 1px solid #282828;
     width: 90%;

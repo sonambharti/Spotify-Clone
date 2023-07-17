@@ -1,4 +1,4 @@
-import React, { useDeferredValue } from 'react';
+import React from 'react';
 import "../ComponentCss/Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';

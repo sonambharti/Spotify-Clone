@@ -19,20 +19,33 @@ function App() {
 
         // console.log("Token : ", _token);
         if (_token) {
+            // giving token to spotify api to connect with react
+            spotify.setAccessToken(_token);
+            // setToken(_token);
+
             dispatch({
                 type: "SET_TOKEN",
                 token: _token,
             });
-            // setToken(_token);
 
-            // giving token to spotify api to connect with react
-            spotify.setAccessToken(_token);
             //get the users account from the spotify
             spotify.getMe().then((user) => {
                 dispatch({
                     type: "SET_USER",
                     user: user,
                 });
+            });
+
+            spotify.getMyTopArtists().then((response) =>
+                dispatch({
+                    type: "SET_TOP_ARTISTS",
+                    top_artists: response,
+                })
+            );
+
+            dispatch({
+                type: "SET_SPOTIFY",
+                spotify: spotify,
             });
             
             spotify.getUserPlaylists().then((playlists) => {
@@ -49,11 +62,7 @@ function App() {
             );
         }
 
-        // console.log("Token: ", token);
-    },  []);
-
-    // console.log('🙍‍♂️', user);
-    // console.log('🎰', token);
+    },  [token, dispatch]);
 
     return ( 
     <div className = "App">
