@@ -3,7 +3,7 @@ import "../ComponentCss/Header.css";
 import { useDataLayerValue } from "./DataLayer";
 import { Avatar } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import { useEffect } from "react";
+
 
 function Header({ spotify }) {
   const [{ user }, dispatch] = useDataLayerValue();
