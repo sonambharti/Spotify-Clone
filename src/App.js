@@ -25,7 +25,7 @@ function App() {
         token: _token,
       });
 
-      spotify_new.getPlaylist("37i9dQZEVXcJZyENOWUFo7").then((response) =>
+      spotify_new.getPlaylist("37i9dQZEVXcQ9COmYvdajy").then((response) =>
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
