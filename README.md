@@ -16,12 +16,14 @@ You may also see any lint errors in the console.
 
 # Create an account on Spotify-developer -> dashboard -> create project
 ## 1.) Client Id: c79e7d54d5a74d88853817ee59bdd249 in the developer mode
-2.)
-
-# Create an account on firebase.google.com -> conosole -> create project
 
 # Install spotify-web-api-js using command:
 ### `npm install spotify-web-api-js`
 
 # Install Material-ui for icon in reacts using command:
 ### `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
+
+
+# Working of SPOTIFY WEB API call in our project
+
+![Spotify web api call flow ](image.png)
